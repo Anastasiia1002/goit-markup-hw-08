@@ -1,0 +1,105 @@
+.DS_Store
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Діагностичні звіти (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Дані часу виконання
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Каталог інструментованих бібліотек, згенерований jscoverage/JSCover
+lib-cov
+
+# Каталог покриття, який використовується такими інструментами, як istanbul
+coverage
+*.lcov
+
+# тестове покриття nyc
+.nyc_output
+
+# Проміжне сховище Grunt (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Каталог залежностей Bower (https://bower.io/)
+bewer_components
+
+# конфігурація node-waf
+.lock-wscript
+
+# Скомпільовані бінарні доповнення (https://nodejs.org/api/addons.html)
+build/Release
+
+# Каталоги залежностей
+node_modules /
+jspm_packages /
+
+# Файли оголошення TypeScript v1
+typings/
+
+# Кеш TypeScript
+* .tsbuildinfo
+
+# Додатковий каталог кешу npm
+.npm
+
+# Додатковий кеш eslint
+.eslintcache
+
+# Кеш мікропакетів
+.rpt2_cache /
+.rts2_cache_cjs /
+.rts2_cache_es /
+.rts2_cache_umd /
+
+# Додаткова історія REPL
+.node_repl_history
+
+# Вихід 'npm pack'
+* .tgz
+
+# Файл цілісності пряжі
+.yarn-integrity
+
+# файл змінних середовища dotenv
+.env
+.env.test
+
+# кеш пакета посилок (https://parceljs.org/)
+.cache
+
+# Вихід збірки Next.js
+.next
+
+# Nuxt.js збирає/генерує вихід
+.nuxt
+dist
+
+# файли Гетсбі
+.cache /
+# Прокоментуйте в загальнодоступному рядку, якщо ваш проект використовує Gatsby і *не* Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# загальнодоступний
+
+# вихід збірки vuepress
+.vuepress / dist
+
+# Безсерверні каталоги
+.serverless/
+
+# Кеш FuseBox
+.fusebox /
+
+# Локальні файли DynamoDB
+.dynamodb /
+
+# Файл порту TernJS
+.tern-port

@@ -1,0 +1,36 @@
+.work {
+    padding-top: 0;
+ 
+ 
+ &__list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+&__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+&__title {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    @include FontWSL(700, 14px, 1.14);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 16px;
+    color: var(--primary-white-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+
+    justify-content: center;
+}}

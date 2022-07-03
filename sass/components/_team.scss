@@ -1,0 +1,47 @@
+.team {
+    background: #f5f4fa;
+
+
+&__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+
+    margin: 0;
+}
+
+&__img {
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+&__name {
+    @include FontWSL (500, 16px, 1.18);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.18;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+&__profession {
+    @include FontWSL (400, 16px, 1.18);
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 1.18;
+    margin-bottom: 16px;
+}
+
+&__staff {
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding: 30px 0;
+    text-align: center;
+}}

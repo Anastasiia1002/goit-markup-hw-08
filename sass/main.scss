@@ -1,0 +1,23 @@
+//variables
+@import "./utils/vars";
+
+
+// base styles
+@import "./base/base";
+@import "./base/conteiner";
+@import "./base/reset";
+
+//components styles
+@import "./components/button";
+@import "./components/feature";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/partner";
+@import "./components/portfolio";
+@import "./components/social";
+@import "./components/team";
+@import "./components/work";
+
