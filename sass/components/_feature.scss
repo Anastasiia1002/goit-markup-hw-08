@@ -1,44 +1,75 @@
 .feature {
     list-style: none;
-    display: flex;
-
+    display: inline-flex;
     gap: 30px;
+    flex-wrap: wrap;
 
 
-&__title {
-    color: var(--title-text-color);
-    @include FontWSL (700, 14px, 1.15);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.15;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        display: flex;
+
+    }
+
+    &__title {
+        text-align: center;
+        color: var(--title-text-color);
+        @include FontWSL (700, 14px, 1.15);
+
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px),
+        (min-width: 1200px) {
+
+            text-align: left;
+
+        }
+
+    }
+
+    &__text {
+        @include FontWSL (400, 14px, 1.71);
+
+    }
 }
 
-&__text {
-    @include FontWSL (400, 14px, 1.71);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-}
-}
 .feature__item {
-    max-width: 270px;
+    max-width: 450px;
 
 
-&::before {
-    content: '';
-    display: block;
-    height: 120px;
+    @media screen and (min-width: 768px) {
 
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
+        max-width: 354px;
+    }
 
-    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+
+
+
+
+    &::before {
+        content: '';
+        display: block;
+        height: 120px;
+
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-bottom: 30px;
+    }
 }
-}
+
 .icon-1::before {
     content: '';
     background-image: url(../images/icon/antenna.svg);

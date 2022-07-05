@@ -1,16 +1,52 @@
+.conteiner-footer {
+    align-items: baseline;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        // justify-content: center;
+    }
+}
+
 .footer__title {
     color: var(--primary-white-color);
-
     @include FontWSL (700, 14px, 1.14);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 16px;
 
-    margin-top: 12px;
+
+    text-align: center;
+
     margin-bottom: 20px;
     color: var(--primary-white-color);
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-top: 12px;
+    }
 }
+
+.footer__item {
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.logo-footer {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
 .footer__contact {
     list-style: none;
     font-style: normal;
@@ -19,32 +55,36 @@
     margin: 0;
     margin-top: 20px;
     gap: 9px;
+    text-align: center;
 
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 
-&__link {
-    text-decoration: none;
-    color: var(--primary-white-color);
-    @include FontWSL (400, 14px, 2);
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 2;
-}
+    &__link {
+        text-decoration: none;
+        color: var(--primary-white-color);
+        @include FontWSL (400, 14px, 2);
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 2;
+    }
 
-&__items {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+    &__items {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
-&__maps {
-    text-decoration: none;
-    color: var(--primary-white-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__maps {
+        text-decoration: none;
+        color: var(--primary-white-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 }
 
@@ -56,7 +96,9 @@
 }
 
 .form-sub {
-    margin-left: 23px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 23px;
+    }
 }
 
 .foot-modal-icon {
@@ -64,7 +106,7 @@
     transform: translateY(-50%);
     right: 28px;
     position: absolute;
-  
+
     fill: var(--primary-white-color);
 }
 
@@ -74,8 +116,13 @@
     border-radius: 4px;
     background-color: transparent;
 
-    width: 358px;
+    display: flex;
+    align-items: center;
+    width: 450px;
     height: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include FontWSL (400, 16px, 1.25);
     // font-weight: 400;
@@ -83,14 +130,27 @@
     // line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 16px;
-    margin-right: 12px;
+
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .form-email {
-    display: flex;
-    align-content: center;
+    display: block;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    align-content: center;
+
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+
+    }
 }
 
 .foot-modal-wrap {
@@ -99,9 +159,7 @@
     position: relative;
 
     @include FontWSL (700, 16px, 1.9);
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.9;
+
     font-family: inherit;
     letter-spacing: 0.06em;
 
@@ -122,12 +180,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-&:hover,
-&:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
-}
+
 .footer-btn-icon {
     display: flex;
 }

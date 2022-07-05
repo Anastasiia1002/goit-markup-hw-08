@@ -1,27 +1,35 @@
 .logo {
     color: var(--accent-color);
-    @include FontLogo;
-    // font-family: 'Raleway', sans-serif;
-    @include FontWSL (700 , 26px ,1.15 );
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.15;
+
+    font-family: 'Raleway', sans-serif;
+    @include FontWSL (700, 24px, 1.16);
+
+
+
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+
+        @include FontWSL (700, 26px, 1.15);
+    }
 }
 
 .studio {
     color: #000000;
     font-family: 'Raleway', sans-serif;
-   
+
 }
 
 .studio__white {
     color: var(--primary-white-color);
-   
-    @include FontWSL (700, 26px, 1.15);
+
+    @include FontWSL (700, 24px, 1.16);
     font-family: 'Raleway', sans-serif;
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.15;
+
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+
+        @include FontWSL (700, 26px, 1.15);
+    }
 }

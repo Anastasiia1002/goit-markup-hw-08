@@ -55,6 +55,17 @@
               >
             </li>
           </ul>
+          <button class="mobile-menu__btn" type="button" data-menu-button aria-expanded="false">
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use class="mobile-menu__icon-menu" href="./images/icon/icons.svg#icon-menu"></use>
+              <use
+                class="mobile-menu__icon-close"
+                width="40"
+                height="40"
+                href="./images/icon/icons.svg#icon-closes"
+              ></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -74,12 +85,32 @@
           <ul class="set-cards list">
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port1.jpg"
                   alt="Технокряк"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port1-l.jpg 1x, ./images/port1-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port1-m.jpg 1x, ./images/port1-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port1-s.jpg 1x, ./images/port1-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port1-s.jpg " alt="Технокряк" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -96,12 +127,26 @@
 
             <li class="template">
               <div class="template__card">
-                <img
-                  class="template__card__img"
-                  src="./images/port2.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                />
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port2-l.jpg 1x, ./images/port2-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port2-m.jpg 1x, ./images/port2-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port2-s.jpg 1x, ./images/port2-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port2-s.jpg " alt="Постер New Orlean vs Golden Star" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -118,12 +163,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port3.jpg"
                   alt="Ресторан Seafood"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port3-l.jpg 1x, ./images/port3-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port3-m.jpg 1x, ./images/port3-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port3-s.jpg 1x, ./images/port3-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port3-s.jpg " alt="Ресторан Seafood" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -140,12 +205,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port4.jpg"
                   alt="Проект Prime"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port4-l.jpg 1x, ./images/port4-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port4-m.jpg 1x, ./images/port4-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port4-s.jpg 1x, ./images/port4-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port4-s.jpg " alt="Проект Prime" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -162,12 +247,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port5.jpg"
                   alt="Проект Boxes"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port5-l.jpg 1x, ./images/port5-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port5-m.jpg 1x, ./images/port5-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port5-s.jpg 1x, ./images/port5-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port5-s.jpg " alt="Проект Boxes" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -184,12 +289,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port6.jpg"
                   alt="Inspiration has no Borders"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port6-l.jpg 1x, ./images/port6-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port6-m.jpg 1x, ./images/port6-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port6-s.jpg 1x, ./images/port6-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port6-s.jpg " alt="Inspiration has no Borders" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -206,12 +331,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port7.jpg"
                   alt="Издание Limited Edition"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port7-l.jpg 1x, ./images/port7-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port7-m.jpg 1x, ./images/port7-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port7-s.jpg 1x, ./images/port7-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port7-s.jpg " alt="Издание Limited Edition" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -228,12 +373,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port8.jpg"
                   alt="Проект LAB"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port8-l.jpg 1x, ./images/port8-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port8-m.jpg 1x, ./images/port8-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port8-s.jpg 1x, ./images/port8-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port8-s.jpg " alt="Проект LAB" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -250,12 +415,32 @@
 
             <li class="template">
               <div class="template__card">
-                <img
+                <!-- <img
                   class="template__card__img"
                   src="./images/port9.jpg"
                   alt="Growing Business"
                   width="370"
-                />
+                /> -->
+                <picture class="template__card__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/port9-l.jpg 1x, ./images/port9-l@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/port9-m.jpg 1x, ./images/port9-m@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/port9-s.jpg 1x, ./images/port9-s@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/port9-s.jpg " alt="Growing Business" />
+                </picture>
                 <div class="template__card__text">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -277,7 +462,9 @@
     <footer>
       <div class="conteiner conteiner-footer">
         <div class="footer__item">
-          <a href="./index.html" class="logo"> Web<span class="studio__white">Studio</span> </a>
+          <div class="logo-footer">
+            <a href="./index.html" class="logo"> Web<span class="studio__white">Studio</span> </a>
+          </div>
           <address>
             <ul class="footer__contact list">
               <li class="footer__contact__link">
@@ -355,6 +542,61 @@
           </label>
         </div>
       </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container">
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link link">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contact list">
+            <li class="mobile-contact__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contact__email link">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contact__item">
+              <a href="tel:+380961111111" class="mobile-contact__tel link"> +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <div class="mobile-social">
+            <ul class="mobile-social__list list">
+              <li>
+                <a class="mobile-social__link link" href="" target="_blank" aria-label="Instagram"
+                  >Instagram <span class="line"> </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="" target="_blank" aria-label="Twitter"
+                  >Twitter<span class="line"> </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="" target="_blank" aria-label="Facebook"
+                  >Facebook<span class="line"> </span>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-social__link link" href="" target="_blank" aria-label="Linkedin"
+                  >Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script src="./mobile-menu.js"></script>
     </footer>
   </body>
 </html>

@@ -5,21 +5,60 @@
     padding-bottom: 0px;
     display: block;
     align-items: center;
-    width: 1200px;
+    width: 480px;
+    padding: 16px 15px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
+
 .main-nav {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 480px;
     display: flex;
     align-items: center;
+    padding: 0px 15px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
+
 .site-nav {
-    display: flex;
-    margin-left: 93px;
-    align-items: center;
-    position: relative;
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        align-items: center;
+        position: relative;
+        margin-left: 88px;
+        gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+
+
+
+    }
+
+
 }
 
 .site-nav__link {
@@ -46,35 +85,73 @@
 }
 
 
+.auth-nav__item:nth-last-child(n) {
+    margin-bottom: 10px;
+
+}
 
 .auth-nav {
-    display: flex;
-    margin-left: auto;
-    gap: 50px;
+    margin-top: 21px;
+    display: none;
+
+    &__icon {
+        fill: currentColor;
+        margin-right: 8px;
 
 
-&__icon {
-    fill: currentColor;
-    margin-right: 10px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+
+        margin-left: auto;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 50px;
+        display: flex;
+        margin-top: 0;
+    }
 }
-}
+
 .auth-nav__link {
     display: flex;
     align-items: center;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 
     color: var(--primary-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+
+
+    letter-spacing: 0.02em;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-&:hover,
-&:focus {
-    color: var(--accent-color);
-}
+
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 1.15;
+
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
