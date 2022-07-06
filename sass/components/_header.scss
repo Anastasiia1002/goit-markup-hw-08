@@ -5,34 +5,34 @@
     padding-bottom: 0px;
     display: block;
     align-items: center;
-    width: 480px;
+    max-width: 480px;
     padding: 16px 15px;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        max-width: 768px;
         padding: 0;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 
 .main-nav {
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    max-width: 480px;
     display: flex;
     align-items: center;
     padding: 0px 15px;
 
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        max-width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 
