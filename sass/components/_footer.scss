@@ -4,6 +4,12 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
@@ -22,8 +28,6 @@
     margin-bottom: 20px;
     color: var(--primary-white-color);
     text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1200px) {
         text-align: left;
@@ -65,9 +69,6 @@
         text-decoration: none;
         color: var(--primary-white-color);
         @include FontWSL (400, 14px, 2);
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 2;
     }
 
     &__items {
@@ -125,9 +126,6 @@
     margin-right: auto;
 
     @include FontWSL (400, 16px, 1.25);
-    // font-weight: 400;
-    // font-size: 16px;
-    // line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 16px;
 

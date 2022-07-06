@@ -138,6 +138,12 @@ p {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 .button-primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -324,6 +330,17 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .conteiner-footer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 @media screen and (min-width: 1200px) {
   .conteiner-footer {
@@ -1191,19 +1208,20 @@ textarea:focus + .modal-icon {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 450px;
+  max-width: 100%;
   height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media screen and (min-width: 768px) {
   .template {
-    width: 354px;
-    height: 100%;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .template {
-    width: 370px;
-    height: auto;
+    max-width: 370px;
   }
 }
 c .template:hover, .template:focus {
@@ -1242,12 +1260,6 @@ c .template:hover, .template:focus {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
-}
-.template__card__img {
-  margin-bottom: 0;
-  display: block;
-}
-.template__card__text {
   position: absolute;
   font-size: 18px;
   line-height: 28px;
@@ -1346,16 +1358,16 @@ c .template:hover, .template:focus {
 }
 .team__item {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 270px;
+    max-width: 270px;
   }
 }
 .team__list {
